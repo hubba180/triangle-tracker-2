@@ -17,8 +17,12 @@ Triangle.prototype.findTriangle = function() {
 Triangle.prototype.triangleKind = function() {
   if (this.side1 === this.side2 && this.side1 === this.side3) {
   return "Equilateral Triangle";
+  } else if (this.side1 === this.side2 || this.side1 === this.side3) {
+    return "Isosceles Triangle";
+  } else if (this.side1 != this.side2 && this.side1 != this.side3 && this.side2 != this.side3)  {
+    return "Scalene Triangle";
   } else {
-    return "Not an equilateral triangle";
+    return "Not triangle";
   }
 };
 
