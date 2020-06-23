@@ -1,6 +1,4 @@
-import $ from 'jquery';
-import { Triangle } from './triangle.js';
-import './styles.css';
+// import { Triangle } from './triangle.js';
 
 
-Triangle(1,2.2);
+// let triangle = new Triangle(1,2,2);

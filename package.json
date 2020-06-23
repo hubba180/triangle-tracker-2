@@ -2,11 +2,12 @@
   "name": "triangle-tracker-2",
   "version": "1.0.0",
   "description": "Identify what type of triangle you would get from inputting three side lengths.",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
     "build": "webpack --mode development",
     "start": "npm run build & webpack-dev-server --open --mode development",
-    "lint": "eslint src/*.js"
+    "lint": "eslint src/*.js",
+    "test": "jest"
   },
   "repository": {
     "type": "git",
@@ -20,6 +21,8 @@
   },
   "homepage": "https://github.com/hubba180/triangle-tracker-2#readme",
   "devDependencies": {
+    "@babel/core": "^7.6.4",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
     "clean-webpack-plugin": "^3.0.0",
     "css-loader": "^3.2.0",
     "eslint": "^6.3.0",
@@ -33,6 +36,7 @@
   },
   "dependencies": {
     "bootstrap": "3.3.7",
+    "jest": "^24.9.0",
     "jquery": "^3.5.1",
     "popper.js": "^1.16.1"
   }
